@@ -9,5 +9,6 @@ $cost = $_POST['cost'];
 
 $sql = "Insert into visit(visit_date,visit_time,doctor_id,patient_id,cost) values('$visitDate','$visitTime','$docid','$ptntid',$cost)";
 
-echo $sql;
+// echo $sql;
+mysqli_query($conn,$sql);
 ?>
